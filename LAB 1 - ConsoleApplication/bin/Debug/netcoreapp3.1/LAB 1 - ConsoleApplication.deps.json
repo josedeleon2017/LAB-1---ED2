@@ -1,0 +1,33 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "LAB 1 - ConsoleApplication/1.0.0": {
+        "runtime": {
+          "LAB 1 - ConsoleApplication.dll": {}
+        }
+      },
+      "LAB 1 - DataStructures/1.0.0": {
+        "runtime": {
+          "LAB 1 - DataStructures.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LAB 1 - ConsoleApplication/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LAB 1 - DataStructures/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
