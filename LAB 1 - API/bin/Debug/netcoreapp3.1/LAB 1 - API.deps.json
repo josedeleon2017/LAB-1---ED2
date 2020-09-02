@@ -314,6 +314,14 @@
           "LAB 1 - API.dll": {}
         }
       },
+      "LAB 1 - DataStructures/1.0.0": {
+        "runtime": {
+          "LAB 1 - DataStructures.dll": {}
+        },
+        "compile": {
+          "LAB 1 - DataStructures.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Antiforgery.dll": {}
@@ -2010,6 +2018,11 @@
   },
   "libraries": {
     "LAB 1 - API/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LAB 1 - DataStructures/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

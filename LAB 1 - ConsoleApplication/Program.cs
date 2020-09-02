@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace LAB_1___ConsoleApplication
 {
@@ -10,7 +11,7 @@ namespace LAB_1___ConsoleApplication
 
 
             LAB_1___DataStructures.NoLinealStructures.Tree.MultipathTree<int> Tree = new LAB_1___DataStructures.NoLinealStructures.Tree.MultipathTree<int>();
-            Tree.Grade = 5;
+            Tree.Grade = 2;
             Tree.Comparer = KeyComparison;
 
             int[] ar = {62,85,93,43,25,28,36,52,5,63,38,94,81,33,69,40,20,88,97,16};
@@ -20,9 +21,18 @@ namespace LAB_1___ConsoleApplication
                 Tree.Insert(ar[i]);
             }
 
-            Console.WriteLine("\nVALORES INSERTADOS: \n"+Tree.Count);
+            List<int> TraversalTest = Tree.ToInOrden();
+
+            string inorden = "";
+            for (int i = 0; i < TraversalTest.Count; i++)
+            {
+                inorden+=TraversalTest[i].ToString()+", ";
+            }
+
+            Console.WriteLine("\nInsertados: \n"+Tree.Count);
 
 
+            Console.WriteLine("\nInOrden: \n" + inorden);
 
 
             Console.ReadLine();

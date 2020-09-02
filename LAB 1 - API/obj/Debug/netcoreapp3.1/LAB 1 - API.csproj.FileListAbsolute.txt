@@ -18,3 +18,6 @@ C:\Users\José De León\Desktop\temporal ED\LAB 1\LAB 1 - API\obj\Debug\netcorea
 C:\Users\José De León\Desktop\temporal ED\LAB 1\LAB 1 - API\obj\Debug\netcoreapp3.1\LAB 1 - API.dll
 C:\Users\José De León\Desktop\temporal ED\LAB 1\LAB 1 - API\obj\Debug\netcoreapp3.1\LAB 1 - API.pdb
 C:\Users\José De León\Desktop\temporal ED\LAB 1\LAB 1 - API\obj\Debug\netcoreapp3.1\LAB 1 - API.genruntimeconfig.cache
+C:\Users\José De León\Desktop\temporal ED\LAB 1\LAB 1 - API\bin\Debug\netcoreapp3.1\LAB 1 - DataStructures.dll
+C:\Users\José De León\Desktop\temporal ED\LAB 1\LAB 1 - API\bin\Debug\netcoreapp3.1\LAB 1 - DataStructures.pdb
+C:\Users\José De León\Desktop\temporal ED\LAB 1\LAB 1 - API\obj\Debug\netcoreapp3.1\LAB 1 - API.csproj.CopyComplete

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using LAB_1___API.Helpers;
 using Microsoft.AspNetCore.Mvc;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -16,57 +17,84 @@ namespace LAB_1___API.Controllers
         [HttpGet]
         public IEnumerable<Movie> Get()
         {
+            Movie.IniciateTree(3);
+
             List<Movie> MovieTest = new List<Movie>();
-            Movie movie1 = new Movie
+            Movie movie = new Movie
             {
-                Name = "Invincible",
+                Name = "DDD",
                 Year = Convert.ToDateTime("20/05/2007"),
                 Directed_by = "Delbert Serman",
                 Stars = new string[] { "Helge Curreen", "Tim Peevor" },
                 Genre = "Drama"
             };
-            MovieTest.Add(movie1);
+            MovieTest.Add(movie);
 
-            Movie movie2 = new Movie
+            movie = new Movie
             {
-                Name = "All Dogs Go to Heaven 2",
+                Name = "BBB",
                 Year = Convert.ToDateTime("18/05/2003"),
                 Directed_by = "Kariotta O'Duane	",
                 Stars = new string[] { "Ansell Tunuy", "Cull Iacobetto" },
                 Genre = "Adventure|Animation|Children|Fantasy|Musical|Romance"
             };
-            MovieTest.Add(movie2);
+            MovieTest.Add(movie);
 
-            Movie movie3 = new Movie
+            movie = new Movie
             {
-                Name = "Guardians of the Galaxy",
+                Name = "AAA",
                 Year = Convert.ToDateTime("28/02/2000"),
                 Directed_by = "Elmer Shenfish",
                 Stars = new string[] { "Aurelea Peverell", "Rosalynd Tasseler" },
                 Genre = "Action|Adventure|Sci-Fi"
             };
-            MovieTest.Add(movie3);
+            MovieTest.Add(movie);
+
+            movie = new Movie
+            {
+                Name = "EEE",
+                Year = Convert.ToDateTime("03/04/2012"),
+                Directed_by = "	Shayla Johnstone",
+                Stars = new string[] { "Geoff Beiderbeck", "Essie Dron" },
+                Genre = "Horror|Thriller"
+            };
+            MovieTest.Add(movie);
+
+            movie = new Movie
+            {
+                Name = "CCC",
+                Year = Convert.ToDateTime("28/12/2013"),
+                Directed_by = "Bartholemy Bloschke",
+                Stars = new string[] { "Aili O'Spillane", "Carmelia Tenpenny" },
+                Genre = "Drama"
+            };
+            MovieTest.Add(movie);
+
+            for (int i = 0; i < MovieTest.Count; i++)
+            {
+                Storage.Instance.Movies.Insert(MovieTest[i]);
+            }
 
             return MovieTest;
         }
 
         // GET api/<MoviesController>/5
         [HttpGet("{traversal}")]
-        public string Get(string traversal)
+        public IEnumerable<Movie> Get(string traversal)
         {
             if(traversal=="inorden")
             {
-                return "Recorrido InOrden del árbol";
+                return Storage.Instance.Movies.ToInOrden();
             }
             if (traversal == "preorden")
             {
-                return "Recorrido PreOrden del árbol";
+                return null;
             }
             if (traversal == "postorden")
             {
-                return "Recorrido PostOrden del árbol";
+                return null;
             }
-            return "value";
+            return null;
         }
 
         // POST api/<MoviesController>

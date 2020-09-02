@@ -100,7 +100,47 @@ namespace LAB_1___DataStructures.NoLinealStructures.Tree
 
         public List<T> ToInOrden()
         {
-            throw new NotImplementedException();
+            List<T> currentList = new List<T>();
+
+            if (Root.Value != null)
+            {
+                InOrden(Root, currentList);
+            }
+            else
+            {
+                return null;
+            }
+            return currentList;
+        }
+
+        private void InOrden(Node<T> node, List<T> currentList)
+        {
+            for (int i = 0; i < node.Value.Count; i++)
+            {
+                if (i == 0)
+                {
+                    if(node.References[i] != null)
+                    {
+                        InOrden(node.References[0], currentList);
+                    }
+                    currentList.Add(node.Value[i]);
+                    if (node.References[i + 1] != null)
+                    {
+                        InOrden(node.References[i+1], currentList);
+                    }
+                }
+                else
+                {
+                    if (node.Value[i] != null)
+                    {
+                        currentList.Add(node.Value[i]);
+                    }
+                    if (node.References[i + 1] != null)
+                    {
+                        InOrden(node.References[i + 1], currentList);
+                    }
+                }
+            }
         }
 
         public List<T> ToPostOrden()

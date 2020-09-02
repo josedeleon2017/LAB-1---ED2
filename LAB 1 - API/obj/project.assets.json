@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETCoreApp,Version=v3.1": {}
+    ".NETCoreApp,Version=v3.1": {
+      "LAB 1 - DataStructures/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/LAB 1 - DataStructures.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LAB 1 - DataStructures.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "LAB 1 - DataStructures/1.0.0": {
+      "type": "project",
+      "path": "../LAB 1 - DataStructures/LAB 1 - DataStructures.csproj",
+      "msbuildProject": "../LAB 1 - DataStructures/LAB 1 - DataStructures.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETCoreApp,Version=v3.1": []
+    ".NETCoreApp,Version=v3.1": [
+      "LAB 1 - DataStructures >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\José De León\\.nuget\\packages\\": {},
@@ -36,7 +55,11 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\José De León\\Desktop\\temporal ED\\LAB 1\\LAB 1 - DataStructures\\LAB 1 - DataStructures.csproj": {
+              "projectPath": "C:\\Users\\José De León\\Desktop\\temporal ED\\LAB 1\\LAB 1 - DataStructures\\LAB 1 - DataStructures.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
