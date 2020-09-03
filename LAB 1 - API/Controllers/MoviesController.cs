@@ -4,6 +4,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using LAB_1___API.Helpers;
 using Microsoft.AspNetCore.Mvc;
+using System.Text.Json;
+using System.IO;
+using Microsoft.AspNetCore.Http;
+using System.Text;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -13,17 +17,16 @@ namespace LAB_1___API.Controllers
     [ApiController]
     public class MoviesController : ControllerBase
     {
-        // GET: api/<MoviesController>
+
         [HttpGet]
         public IEnumerable<Movie> Get()
         {
             Movie.IniciateTree(3);
-
             List<Movie> MovieTest = new List<Movie>();
             Movie movie = new Movie
             {
                 Name = "DDD",
-                Year = Convert.ToDateTime("20/05/2007"),
+                Year = 2007,
                 Directed_by = "Delbert Serman",
                 Stars = new string[] { "Helge Curreen", "Tim Peevor" },
                 Genre = "Drama"
@@ -33,7 +36,7 @@ namespace LAB_1___API.Controllers
             movie = new Movie
             {
                 Name = "BBB",
-                Year = Convert.ToDateTime("18/05/2003"),
+                Year = 2003,
                 Directed_by = "Kariotta O'Duane	",
                 Stars = new string[] { "Ansell Tunuy", "Cull Iacobetto" },
                 Genre = "Adventure|Animation|Children|Fantasy|Musical|Romance"
@@ -43,7 +46,7 @@ namespace LAB_1___API.Controllers
             movie = new Movie
             {
                 Name = "AAA",
-                Year = Convert.ToDateTime("28/02/2000"),
+                Year = 2000,
                 Directed_by = "Elmer Shenfish",
                 Stars = new string[] { "Aurelea Peverell", "Rosalynd Tasseler" },
                 Genre = "Action|Adventure|Sci-Fi"
@@ -53,7 +56,7 @@ namespace LAB_1___API.Controllers
             movie = new Movie
             {
                 Name = "EEE",
-                Year = Convert.ToDateTime("03/04/2012"),
+                Year = 2012,
                 Directed_by = "	Shayla Johnstone",
                 Stars = new string[] { "Geoff Beiderbeck", "Essie Dron" },
                 Genre = "Horror|Thriller"
@@ -63,7 +66,7 @@ namespace LAB_1___API.Controllers
             movie = new Movie
             {
                 Name = "CCC",
-                Year = Convert.ToDateTime("28/12/2013"),
+                Year = 2013,
                 Directed_by = "Bartholemy Bloschke",
                 Stars = new string[] { "Aili O'Spillane", "Carmelia Tenpenny" },
                 Genre = "Drama"
@@ -78,7 +81,6 @@ namespace LAB_1___API.Controllers
             return MovieTest;
         }
 
-        // GET api/<MoviesController>/5
         [HttpGet("{traversal}")]
         public IEnumerable<Movie> Get(string traversal)
         {
@@ -97,23 +99,27 @@ namespace LAB_1___API.Controllers
             return null;
         }
 
-        // POST api/<MoviesController>
         [HttpPost]
-        public string Post([FromBody] string grade)
+        public void Post([FromBody] JsonElement jsonobj)
         {
-            return "EL GRADO ES " + Convert.ToString(grade);
+            JsonElement jsonprop= jsonobj.GetProperty("order");
+            int order = jsonprop.GetInt32();
+            Movie.IniciateTree(order);
         }
 
-        // PUT api/<MoviesController>/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+
+        [HttpPost("{populate}")]
+        public async Task ReadJson([FromForm] IFormFile file)
         {
+            string jsonlist;
+            using (var memory = new MemoryStream())
+            {
+                await file.CopyToAsync(memory);
+                jsonlist = Encoding.ASCII.GetString(memory.ToArray());
+            }
+
+            Ok();
         }
 
-        // DELETE api/<MoviesController>/5
-        [HttpDelete("{id}")]
-        public void Delete(int id)
-        {
-        }
     }
 }

@@ -9,5 +9,7 @@
     <ProjectReference Include="..\LAB 1 - DataStructures\LAB 1 - DataStructures.csproj" />
   </ItemGroup>
 
+  <ProjectExtensions><VisualStudio><UserProperties properties_4launchsettings_1json__JsonSchema="" /></VisualStudio></ProjectExtensions>
+
 
 </Project>
