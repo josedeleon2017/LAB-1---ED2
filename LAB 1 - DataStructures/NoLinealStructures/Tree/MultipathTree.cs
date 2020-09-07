@@ -174,12 +174,7 @@ namespace LAB_1___DataStructures.NoLinealStructures.Tree
 
         public List<T> ToPostOrden()
         {
-            return null;
-        }
-
-        private void PostOrden(Node<T> node, List<T> currentList)
-        {
-
+            throw new NotImplementedException();
         }
 
         private void EmptyNode(List<T> value, List<T> currentList)
