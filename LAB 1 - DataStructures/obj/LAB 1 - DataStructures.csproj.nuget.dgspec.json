@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\José De León\\Desktop\\temporal ED\\LAB 1\\LAB 1 - DataStructures\\LAB 1 - DataStructures.csproj": {}
+    "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\LAB-1---ED2\\LAB 1 - DataStructures\\LAB 1 - DataStructures.csproj": {}
   },
   "projects": {
-    "C:\\Users\\José De León\\Desktop\\temporal ED\\LAB 1\\LAB 1 - DataStructures\\LAB 1 - DataStructures.csproj": {
+    "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\LAB-1---ED2\\LAB 1 - DataStructures\\LAB 1 - DataStructures.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\José De León\\Desktop\\temporal ED\\LAB 1\\LAB 1 - DataStructures\\LAB 1 - DataStructures.csproj",
+        "projectUniqueName": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\LAB-1---ED2\\LAB 1 - DataStructures\\LAB 1 - DataStructures.csproj",
         "projectName": "LAB 1 - DataStructures",
-        "projectPath": "C:\\Users\\José De León\\Desktop\\temporal ED\\LAB 1\\LAB 1 - DataStructures\\LAB 1 - DataStructures.csproj",
-        "packagesPath": "C:\\Users\\José De León\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\José De León\\Desktop\\temporal ED\\LAB 1\\LAB 1 - DataStructures\\obj\\",
+        "projectPath": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\LAB-1---ED2\\LAB 1 - DataStructures\\LAB 1 - DataStructures.csproj",
+        "packagesPath": "C:\\Users\\kevin\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\LAB-1---ED2\\LAB 1 - DataStructures\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\José De León\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\kevin\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

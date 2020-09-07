@@ -21,7 +21,7 @@ namespace LAB_1___ConsoleApplication
                 Tree.Insert(ar[i]);
             }
 
-            List<int> TraversalTest = Tree.ToInOrden();
+            List<int> TraversalTest = Tree.ToPreOrden();
 
             string inorden = "";
             for (int i = 0; i < TraversalTest.Count; i++)
