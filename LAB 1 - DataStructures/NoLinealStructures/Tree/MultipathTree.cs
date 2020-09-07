@@ -145,12 +145,41 @@ namespace LAB_1___DataStructures.NoLinealStructures.Tree
 
         public List<T> ToPostOrden()
         {
-            throw new NotImplementedException();
+            List<T> currentList = new List<T>();
+
+            if (Root.Value != null)
+            {
+                PostOrden(Root, currentList);
+            }
+            else
+            {
+                return null;
+            }
+            return currentList;
+        }
+        private void PostOrden(Node<T> node, List<T> currentList)
+        {
+            for (int j = 0; j <= (Grade - 1); j++)
+            {
+                if (node.References[j] != null)
+                {
+                    PostOrden(node.References[j], currentList);
+                }
+            }
+            EmptyNode(node.Value, currentList);
+            return;
         }
 
         public List<T> ToPreOrden()
         {
             throw new NotImplementedException();
+        }
+        private void EmptyNode(List<T> value, List<T> currentList)
+        {
+            for (int i = 0; i < value.Count; i++)
+            {
+                currentList.Add(value[i]);
+            }
         }
     }
 }

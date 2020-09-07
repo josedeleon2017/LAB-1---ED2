@@ -11,7 +11,7 @@ namespace LAB_1___ConsoleApplication
 
 
             LAB_1___DataStructures.NoLinealStructures.Tree.MultipathTree<int> Tree = new LAB_1___DataStructures.NoLinealStructures.Tree.MultipathTree<int>();
-            Tree.Grade = 2;
+            Tree.Grade = 3;
             Tree.Comparer = KeyComparison;
 
             int[] ar = {62,85,93,43,25,28,36,52,5,63,38,94,81,33,69,40,20,88,97,16};
@@ -21,7 +21,7 @@ namespace LAB_1___ConsoleApplication
                 Tree.Insert(ar[i]);
             }
 
-            List<int> TraversalTest = Tree.ToInOrden();
+            List<int> TraversalTest = Tree.ToPostOrden();
 
             string inorden = "";
             for (int i = 0; i < TraversalTest.Count; i++)
@@ -32,7 +32,7 @@ namespace LAB_1___ConsoleApplication
             Console.WriteLine("\nInsertados: \n"+Tree.Count);
 
 
-            Console.WriteLine("\nInOrden: \n" + inorden);
+            Console.WriteLine("\nPostOrden: \n" + inorden);
 
 
             Console.ReadLine();
