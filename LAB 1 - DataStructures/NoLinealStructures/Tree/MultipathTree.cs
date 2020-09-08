@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace LAB_1___DataStructures.NoLinealStructures.Tree
 {
@@ -97,6 +99,33 @@ namespace LAB_1___DataStructures.NoLinealStructures.Tree
             }
             return node;
         }
+        public List<T> ToPreOrden()
+        {
+            List<T> currentList = new List<T>();
+
+            if (Root.Value != null)
+            {
+                PreOrden(Root, currentList);
+            }
+            else
+            {
+                return null;
+            }
+            return currentList;
+        }
+
+        public void PreOrden(Node<T> node, List<T> currentList)
+        {
+            EmptyNode(node.Value, currentList);
+            for (int j = 0; j <= (Grade-1); j++)
+            {
+                if (node.References[j] != null)
+                {
+                    PreOrden(node.References[j], currentList);
+                }
+            }
+            return;
+        } 
 
         public List<T> ToInOrden()
         {
@@ -148,9 +177,13 @@ namespace LAB_1___DataStructures.NoLinealStructures.Tree
             throw new NotImplementedException();
         }
 
-        public List<T> ToPreOrden()
+        private void EmptyNode(List<T> value, List<T> currentList)
         {
-            throw new NotImplementedException();
+            for (int i = 0; i < value.Count; i++)
+            {
+                currentList.Add(value[i]);
+            }
         }
+
     }
 }
