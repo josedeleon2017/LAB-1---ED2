@@ -16,3 +16,12 @@ C:\Users\kevin\OneDrive\Documentos\GitHub\LAB-1---ED2\LAB 1 - DataStructures\obj
 C:\Users\kevin\OneDrive\Documentos\GitHub\LAB-1---ED2\LAB 1 - DataStructures\obj\Debug\netcoreapp3.1\LAB 1 - DataStructures.csproj.CoreCompileInputs.cache
 C:\Users\kevin\OneDrive\Documentos\GitHub\LAB-1---ED2\LAB 1 - DataStructures\obj\Debug\netcoreapp3.1\LAB 1 - DataStructures.dll
 C:\Users\kevin\OneDrive\Documentos\GitHub\LAB-1---ED2\LAB 1 - DataStructures\obj\Debug\netcoreapp3.1\LAB 1 - DataStructures.pdb
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - DataStructures\bin\Debug\netcoreapp3.1\LAB 1 - DataStructures.deps.json
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - DataStructures\bin\Debug\netcoreapp3.1\LAB 1 - DataStructures.dll
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - DataStructures\bin\Debug\netcoreapp3.1\LAB 1 - DataStructures.pdb
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - DataStructures\obj\Debug\netcoreapp3.1\LAB 1 - DataStructures.csprojAssemblyReference.cache
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - DataStructures\obj\Debug\netcoreapp3.1\LAB 1 - DataStructures.AssemblyInfoInputs.cache
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - DataStructures\obj\Debug\netcoreapp3.1\LAB 1 - DataStructures.AssemblyInfo.cs
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - DataStructures\obj\Debug\netcoreapp3.1\LAB 1 - DataStructures.csproj.CoreCompileInputs.cache
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - DataStructures\obj\Debug\netcoreapp3.1\LAB 1 - DataStructures.dll
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - DataStructures\obj\Debug\netcoreapp3.1\LAB 1 - DataStructures.pdb

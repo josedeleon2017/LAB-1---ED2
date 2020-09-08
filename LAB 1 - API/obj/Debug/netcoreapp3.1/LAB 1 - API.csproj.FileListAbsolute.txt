@@ -21,3 +21,26 @@ C:\Users\José De León\Desktop\temporal ED\LAB 1\LAB 1 - API\obj\Debug\netcorea
 C:\Users\José De León\Desktop\temporal ED\LAB 1\LAB 1 - API\bin\Debug\netcoreapp3.1\LAB 1 - DataStructures.dll
 C:\Users\José De León\Desktop\temporal ED\LAB 1\LAB 1 - API\bin\Debug\netcoreapp3.1\LAB 1 - DataStructures.pdb
 C:\Users\José De León\Desktop\temporal ED\LAB 1\LAB 1 - API\obj\Debug\netcoreapp3.1\LAB 1 - API.csproj.CopyComplete
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - API\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - API\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - API\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - API\bin\Debug\netcoreapp3.1\LAB 1 - API.exe
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - API\bin\Debug\netcoreapp3.1\LAB 1 - API.deps.json
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - API\bin\Debug\netcoreapp3.1\LAB 1 - API.runtimeconfig.json
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - API\bin\Debug\netcoreapp3.1\LAB 1 - API.runtimeconfig.dev.json
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - API\bin\Debug\netcoreapp3.1\LAB 1 - API.dll
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - API\bin\Debug\netcoreapp3.1\LAB 1 - API.pdb
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - API\bin\Debug\netcoreapp3.1\LAB 1 - DataStructures.dll
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - API\bin\Debug\netcoreapp3.1\LAB 1 - DataStructures.pdb
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - API\obj\Debug\netcoreapp3.1\LAB 1 - API.csprojAssemblyReference.cache
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - API\obj\Debug\netcoreapp3.1\LAB 1 - API.AssemblyInfoInputs.cache
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - API\obj\Debug\netcoreapp3.1\LAB 1 - API.AssemblyInfo.cs
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - API\obj\Debug\netcoreapp3.1\LAB 1 - API.csproj.CoreCompileInputs.cache
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - API\obj\Debug\netcoreapp3.1\LAB 1 - API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - API\obj\Debug\netcoreapp3.1\LAB 1 - API.RazorTargetAssemblyInfo.cache
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - API\obj\Debug\netcoreapp3.1\LAB 1 - API.csproj.CopyComplete
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - API\obj\Debug\netcoreapp3.1\staticwebassets\LAB 1 - API.StaticWebAssets.Manifest.cache
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - API\obj\Debug\netcoreapp3.1\staticwebassets\LAB 1 - API.StaticWebAssets.xml
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - API\obj\Debug\netcoreapp3.1\LAB 1 - API.dll
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - API\obj\Debug\netcoreapp3.1\LAB 1 - API.pdb
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - API\obj\Debug\netcoreapp3.1\LAB 1 - API.genruntimeconfig.cache

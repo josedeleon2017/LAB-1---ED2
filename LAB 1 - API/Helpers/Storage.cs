@@ -17,7 +17,7 @@ namespace LAB_1___API.Helpers
                 return _instance;
             }
         }
-        public LAB_1___DataStructures.NoLinealStructures.Tree.MultipathTree<Movie> Movies = new LAB_1___DataStructures.NoLinealStructures.Tree.MultipathTree<Movie>();
+        public LAB_1___DataStructures.NoLinealStructures.Tree.MultipathTree<Movie> MoviesTree = new LAB_1___DataStructures.NoLinealStructures.Tree.MultipathTree<Movie>();
      
     }  
 }

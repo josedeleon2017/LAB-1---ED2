@@ -30,3 +30,19 @@ C:\Users\kevin\OneDrive\Documentos\GitHub\LAB-1---ED2\LAB 1 - ConsoleApplication
 C:\Users\kevin\OneDrive\Documentos\GitHub\LAB-1---ED2\LAB 1 - ConsoleApplication\obj\Debug\netcoreapp3.1\LAB 1 - ConsoleApplication.dll
 C:\Users\kevin\OneDrive\Documentos\GitHub\LAB-1---ED2\LAB 1 - ConsoleApplication\obj\Debug\netcoreapp3.1\LAB 1 - ConsoleApplication.pdb
 C:\Users\kevin\OneDrive\Documentos\GitHub\LAB-1---ED2\LAB 1 - ConsoleApplication\obj\Debug\netcoreapp3.1\LAB 1 - ConsoleApplication.genruntimeconfig.cache
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - ConsoleApplication\bin\Debug\netcoreapp3.1\LAB 1 - ConsoleApplication.exe
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - ConsoleApplication\bin\Debug\netcoreapp3.1\LAB 1 - ConsoleApplication.deps.json
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - ConsoleApplication\bin\Debug\netcoreapp3.1\LAB 1 - ConsoleApplication.runtimeconfig.json
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - ConsoleApplication\bin\Debug\netcoreapp3.1\LAB 1 - ConsoleApplication.runtimeconfig.dev.json
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - ConsoleApplication\bin\Debug\netcoreapp3.1\LAB 1 - ConsoleApplication.dll
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - ConsoleApplication\bin\Debug\netcoreapp3.1\LAB 1 - ConsoleApplication.pdb
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - ConsoleApplication\bin\Debug\netcoreapp3.1\LAB 1 - DataStructures.dll
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - ConsoleApplication\bin\Debug\netcoreapp3.1\LAB 1 - DataStructures.pdb
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - ConsoleApplication\obj\Debug\netcoreapp3.1\LAB 1 - ConsoleApplication.csprojAssemblyReference.cache
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - ConsoleApplication\obj\Debug\netcoreapp3.1\LAB 1 - ConsoleApplication.AssemblyInfoInputs.cache
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - ConsoleApplication\obj\Debug\netcoreapp3.1\LAB 1 - ConsoleApplication.AssemblyInfo.cs
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - ConsoleApplication\obj\Debug\netcoreapp3.1\LAB 1 - ConsoleApplication.csproj.CoreCompileInputs.cache
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - ConsoleApplication\obj\Debug\netcoreapp3.1\LAB 1 - ConsoleApplication.csproj.CopyComplete
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - ConsoleApplication\obj\Debug\netcoreapp3.1\LAB 1 - ConsoleApplication.dll
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - ConsoleApplication\obj\Debug\netcoreapp3.1\LAB 1 - ConsoleApplication.pdb
+C:\Users\José De León\Desktop\delete\LAB-1---ED2\LAB 1 - ConsoleApplication\obj\Debug\netcoreapp3.1\LAB 1 - ConsoleApplication.genruntimeconfig.cache

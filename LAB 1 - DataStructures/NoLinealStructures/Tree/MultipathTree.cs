@@ -8,7 +8,7 @@ namespace LAB_1___DataStructures.NoLinealStructures.Tree
 {
     public class MultipathTree<T> : Interfaces.ITreeDataStructure<T>
     {
-        public Node<T> Root { get; set; }
+        private Node<T> Root { get; set; }
         public int Grade;
         public Delegate Comparer;
         public int Count;
@@ -114,9 +114,9 @@ namespace LAB_1___DataStructures.NoLinealStructures.Tree
             return currentList;
         }
 
-        public void PreOrden(Node<T> node, List<T> currentList)
+        private void PreOrden(Node<T> node, List<T> currentList)
         {
-            EmptyNode(node.Value, currentList);
+            TraverseNode(node.Value, currentList);
             for (int j = 0; j <= (Grade-1); j++)
             {
                 if (node.References[j] != null)
@@ -195,11 +195,11 @@ namespace LAB_1___DataStructures.NoLinealStructures.Tree
                     PostOrden(node.References[j], currentList);
                 }
             }
-            EmptyNode(node.Value, currentList);
+            TraverseNode(node.Value, currentList);
             return;
         }
 
-        private void EmptyNode(List<T> value, List<T> currentList)
+        private void TraverseNode(List<T> value, List<T> currentList)
         {
             for (int i = 0; i < value.Count; i++)
             {

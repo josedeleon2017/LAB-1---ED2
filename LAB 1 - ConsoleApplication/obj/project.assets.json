@@ -27,19 +27,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kevin\\.nuget\\packages\\": {}
+    "C:\\Users\\José De León\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\LAB-1---ED2\\LAB 1 - ConsoleApplication\\LAB 1 - ConsoleApplication.csproj",
+      "projectUniqueName": "C:\\Users\\José De León\\Desktop\\delete\\LAB-1---ED2\\LAB 1 - ConsoleApplication\\LAB 1 - ConsoleApplication.csproj",
       "projectName": "LAB 1 - ConsoleApplication",
-      "projectPath": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\LAB-1---ED2\\LAB 1 - ConsoleApplication\\LAB 1 - ConsoleApplication.csproj",
-      "packagesPath": "C:\\Users\\kevin\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\LAB-1---ED2\\LAB 1 - ConsoleApplication\\obj\\",
+      "projectPath": "C:\\Users\\José De León\\Desktop\\delete\\LAB-1---ED2\\LAB 1 - ConsoleApplication\\LAB 1 - ConsoleApplication.csproj",
+      "packagesPath": "C:\\Users\\José De León\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\José De León\\Desktop\\delete\\LAB-1---ED2\\LAB 1 - ConsoleApplication\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\kevin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\José De León\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -52,8 +56,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\LAB-1---ED2\\LAB 1 - DataStructures\\LAB 1 - DataStructures.csproj": {
-              "projectPath": "C:\\Users\\kevin\\OneDrive\\Documentos\\GitHub\\LAB-1---ED2\\LAB 1 - DataStructures\\LAB 1 - DataStructures.csproj"
+            "C:\\Users\\José De León\\Desktop\\delete\\LAB-1---ED2\\LAB 1 - DataStructures\\LAB 1 - DataStructures.csproj": {
+              "projectPath": "C:\\Users\\José De León\\Desktop\\delete\\LAB-1---ED2\\LAB 1 - DataStructures\\LAB 1 - DataStructures.csproj"
             }
           }
         }
@@ -81,7 +85,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -19,82 +19,27 @@ namespace LAB_1___API.Controllers
     {
 
         [HttpGet]
-        public IEnumerable<Movie> Get()
+        public string Get()
         {
-            Movie.IniciateTree(3);
-            List<Movie> MovieTest = new List<Movie>();
-            Movie movie = new Movie
-            {
-                Name = "DDD",
-                Year = 2007,
-                Directed_by = "Delbert Serman",
-                Stars = new string[] { "Helge Curreen", "Tim Peevor" },
-                Genre = "Drama"
-            };
-            MovieTest.Add(movie);
-
-            movie = new Movie
-            {
-                Name = "BBB",
-                Year = 2003,
-                Directed_by = "Kariotta O'Duane	",
-                Stars = new string[] { "Ansell Tunuy", "Cull Iacobetto" },
-                Genre = "Adventure|Animation|Children|Fantasy|Musical|Romance"
-            };
-            MovieTest.Add(movie);
-
-            movie = new Movie
-            {
-                Name = "AAA",
-                Year = 2000,
-                Directed_by = "Elmer Shenfish",
-                Stars = new string[] { "Aurelea Peverell", "Rosalynd Tasseler" },
-                Genre = "Action|Adventure|Sci-Fi"
-            };
-            MovieTest.Add(movie);
-
-            movie = new Movie
-            {
-                Name = "EEE",
-                Year = 2012,
-                Directed_by = "	Shayla Johnstone",
-                Stars = new string[] { "Geoff Beiderbeck", "Essie Dron" },
-                Genre = "Horror|Thriller"
-            };
-            MovieTest.Add(movie);
-
-            movie = new Movie
-            {
-                Name = "CCC",
-                Year = 2013,
-                Directed_by = "Bartholemy Bloschke",
-                Stars = new string[] { "Aili O'Spillane", "Carmelia Tenpenny" },
-                Genre = "Drama"
-            };
-            MovieTest.Add(movie);
-
-            for (int i = 0; i < MovieTest.Count; i++)
-            {
-                Storage.Instance.Movies.Insert(MovieTest[i]);
-            }
-
-            return MovieTest;
+            string text = "\t\t\t- LAB 1 -\n\nKevin Romero 1047519\nJosé De León 1072619\n\nPOST- /api/movies/\n\t{ 'order' = 5}\n\nPOST- /api/movies/populate\n\tAdd test1.json in form-data with postman\n\nGET- /api/movies/inorden\n\t/api/movies/preorden\n\t/api/movies/postorden";
+            return text;
         }
 
         [HttpGet("{traversal}")]
         public IEnumerable<Movie> Get(string traversal)
         {
-            if(traversal=="inorden")
+            if(Storage.Instance.MoviesTree.Count == 0) return null;
+            if (traversal=="inorden")
             {
-                return Storage.Instance.Movies.ToInOrden();
+                return Storage.Instance.MoviesTree.ToInOrden();
             }
             if (traversal == "preorden")
             {
-                return null;
+                return Storage.Instance.MoviesTree.ToPreOrden();
             }
             if (traversal == "postorden")
             {
-                return null;
+                return Storage.Instance.MoviesTree.ToPostOrden();
             }
             return null;
         }
@@ -103,22 +48,41 @@ namespace LAB_1___API.Controllers
         public void Post([FromBody] JsonElement jsonobj)
         {
             JsonElement jsonprop= jsonobj.GetProperty("order");
-            int order = jsonprop.GetInt32();
-            Movie.IniciateTree(order);
+            int grade = jsonprop.GetInt32();
+            Movie.IniciateTree(grade);
         }
 
 
-        [HttpPost("{populate}")]
-        public async Task ReadJson([FromForm] IFormFile file)
+        [HttpPost("populate")]
+        public ActionResult ReadJson([FromForm] IFormFile file)
         {
-            string jsonlist;
-            using (var memory = new MemoryStream())
+            try
             {
-                await file.CopyToAsync(memory);
-                jsonlist = Encoding.ASCII.GetString(memory.ToArray());
+                List<Movie> movies_list;
+                using (var reserved_memory = new MemoryStream())
+                {
+                    file.CopyToAsync(reserved_memory);
+                    string json_text = Encoding.ASCII.GetString(reserved_memory.ToArray());
+
+                    JsonSerializerOptions name_rule = new JsonSerializerOptions { PropertyNamingPolicy = JsonNamingPolicy.CamelCase, IgnoreNullValues = true };
+                    movies_list = JsonSerializer.Deserialize<List<Movie>>(json_text, name_rule);
+                }
+
+                if (movies_list != null && Storage.Instance.MoviesTree.Grade != 0)
+                {
+                    for (int i = 0; i < movies_list.Count; i++)
+                    {
+                        Storage.Instance.MoviesTree.Insert(movies_list[i]);
+                    }
+                    return Ok();
+                }
+                return StatusCode(500);
+            }
+            catch (Exception)
+            {
+                return StatusCode(500);
             }
 
-            Ok();
         }
 
     }

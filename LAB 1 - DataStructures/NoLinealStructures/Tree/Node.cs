@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LAB_1___DataStructures.NoLinealStructures.Tree
 {
-    public class Node<T>
+    class Node<T>
     {
         public List<Node<T>> References { get; set; }
         public List<T> Value { get; set; }
