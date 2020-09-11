@@ -21,35 +21,52 @@ namespace LAB_1___API.Controllers
         [HttpGet]
         public string Get()
         {
-            string text = "\t\t\t- LAB 1 -\n\nKevin Romero 1047519\nJosé De León 1072619\n\nPOST- /api/movies/\n\t{ 'order' = 5}\n\nPOST- /api/movies/populate\n\tAdd test1.json in form-data with postman\n\nGET- /api/movies/inorden\n\t/api/movies/preorden\n\t/api/movies/postorden";
+            string text = "\t\t\t- LAB 1 -\n\nKevin Romero 1047519\nJosé De León 1072619\n\nPOST- /api/movies\n\t{\"order\" : 5}\n\nPOST- /api/movies/populate\n\tAdd test1.json in form-data with postman\n\nGET-    /api/movies/inorden\n\t/api/movies/preorden\n\t/api/movies/postorden";
             return text;
         }
 
         [HttpGet("{traversal}")]
         public IEnumerable<Movie> Get(string traversal)
         {
-            if(Storage.Instance.MoviesTree.Count == 0) return null;
-            if (traversal=="inorden")
+            try
             {
-                return Storage.Instance.MoviesTree.ToInOrden();
+                if (Storage.Instance.MoviesTree.Count == 0) return null;
+                if (traversal == "inorden")
+                {
+                    return Storage.Instance.MoviesTree.ToInOrden();
+                }
+                if (traversal == "preorden")
+                {
+                    return Storage.Instance.MoviesTree.ToPreOrden();
+                }
+                if (traversal == "postorden")
+                {
+                    return Storage.Instance.MoviesTree.ToPostOrden();
+                }
+                return null;
             }
-            if (traversal == "preorden")
+            catch (Exception)
             {
-                return Storage.Instance.MoviesTree.ToPreOrden();
-            }
-            if (traversal == "postorden")
-            {
-                return Storage.Instance.MoviesTree.ToPostOrden();
-            }
-            return null;
+
+                return null;
+            }         
         }
 
         [HttpPost]
-        public void Post([FromBody] JsonElement jsonobj)
+        public ActionResult Post([FromBody] JsonElement jsonobj)
         {
-            JsonElement jsonprop= jsonobj.GetProperty("order");
-            int grade = jsonprop.GetInt32();
-            Movie.IniciateTree(grade);
+            try
+            {
+                JsonElement jsonprop = jsonobj.GetProperty("order");
+                int grade = jsonprop.GetInt32();
+                if (grade < 2) return StatusCode(500);
+                Movie.IniciateTree(grade);
+                return Ok();
+            }
+            catch (Exception)
+            {
+                return StatusCode(500);
+            }
         }
 
 

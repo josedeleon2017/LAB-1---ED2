@@ -17,7 +17,7 @@ namespace LAB_1___API
 
         public static void IniciateTree(int grade)
         {
-            if (Storage.Instance.MoviesTree.Count == 0) Storage.Instance.MoviesTree = new LAB_1___DataStructures.NoLinealStructures.Tree.MultipathTree<Movie>();
+            if (Storage.Instance.MoviesTree.Count == 0 || Storage.Instance.MoviesTree.Count != 0) Storage.Instance.MoviesTree = new LAB_1___DataStructures.NoLinealStructures.Tree.MultipathTree<Movie>();
             Storage.Instance.MoviesTree.Grade = grade;
             Storage.Instance.MoviesTree.Comparer = IdComparison;
         }
